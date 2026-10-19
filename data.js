@@ -62,9 +62,9 @@ window.BOARD_DATA = {
   /* Challenge for each day. Index 0 is day 1 (20 Oct). If a list is shorter than 30 it repeats. */
   "challenges": {
     "tyrone": [
-      "Send 5 personal LinkedIn notes to warm contacts",
+      "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",
       "Approve the v4 UAE launch copy",
-      "Name 5 warm contacts for personal Starter asks",
+      "LinkedIn prospects outreach (Ty Berger owns; warm contacts dropped)",
       "Ask 2 past clients for a referral",
       "Book 1 scope call",
       "Review and approve the cold email drafts",
@@ -72,9 +72,9 @@ window.BOARD_DATA = {
       "Send 3 follow ups to open conversations",
       "Record a 60 second Loom on what our team found this week",
       "Book 1 scope call",
-      "Send 5 personal LinkedIn notes to warm contacts",
+      "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",
       "Ask 2 past clients for a referral",
-      "Send 1 proposal or a clear next step to a warm lead",
+      "Send 1 proposal or a clear next step to a LinkedIn prospect",
       "Post one AI Work Check LinkedIn post",
       "Reply to every comment and DM within 2 hours"
     ],
@@ -82,7 +82,7 @@ window.BOARD_DATA = {
       "Post one AI Work Check LinkedIn post",
       "Finish the v4 UAE launch copy",
       "Post the UAE launch and send 10 LinkedIn DMs",
-      "Send 5 personal LinkedIn notes to warm contacts",
+      "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",
       "Share one short case style post with no client names",
       "Book 1 scope call",
       "Comment on 10 posts from UAE founders",
@@ -108,10 +108,10 @@ window.BOARD_DATA = {
       ]
     },
     {
-      "title": "First Starter from warm contacts",
-      "summary": "Five names, personal asks, two scope calls, first Starter banked.",
+      "title": "LinkedIn prospects (Ty Berger)",
+      "summary": "Warm-contacts move dropped 19 Oct 17:55. Ty Berger runs LinkedIn prospects for Starter asks.",
       "steps": [
-        { "id": "m2s1", "who": "tyrone", "text": "Tyrone names 5 warm contacts for personal Starter asks", "due": "2026-10-21", "done": false },
+        { "id": "m2s1", "who": "tyberger", "text": "Ty Berger runs LinkedIn prospects (replaces warm contacts)", "due": "2026-10-21", "done": false },
         { "id": "m2s2", "who": "both",   "text": "Aim for 2 scope calls booked", "due": "2026-10-23", "done": false },
         { "id": "m2s3", "who": "both",   "text": "First Starter verified banked", "due": "2026-10-30", "done": false }
       ]
@@ -145,6 +145,8 @@ window.BOARD_DATA = {
     { "name": "Starter",        "price": 750,  "detail": "2 days", "terms": "Paid upfront", "desc": "Staff pulse survey for up to 25 staff, plus a safe use sheet.", "highlight": true },
     { "name": "Full Review",    "price": 2500, "detail": "5 days", "terms": "50/50", "desc": "Full staff check plus a draft AI policy. Half upfront, half on delivery." },
     { "name": "Option",         "price": 3500, "detail": "",       "terms": "", "desc": "For companies whose bots take actions or that use a second channel. Adds a staff briefing and a regulator map." },
-    { "name": "Staff AI Check", "price": 1500, "detail": "",       "terms": "", "desc": "" }
+    { "name": "Staff AI Check", "price": 1500, "detail": "",       "terms": "", "desc": "" },
+    { "name": "Company Brain Setup", "price": "1500-3500", "detail": "", "terms": "Fixed range", "desc": "Obsidian plus Notion brain installed for an owner. Ty-approved 19 Oct evening." },
+    { "name": "Agent Team Starter", "price": "2500-5000", "detail": "", "terms": "Optional monthly fee (no price yet)", "desc": "Chief of Staff agent plus two agents, built on the brain. Ty-approved 19 Oct evening." }
   ]
 };

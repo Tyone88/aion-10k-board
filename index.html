@@ -399,7 +399,7 @@ h1{font-size:92px;font-weight:900;letter-spacing:-.045em;line-height:.95}
 .soctot b{font:800 22px var(--font-mono);color:var(--text);margin-left:8px}
 
 /* OFFERS */
-.offers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
 .offer{padding:28px;overflow:hidden;transition:transform .3s}
 .offer:hover{transform:translateY(-4px)}
 .offer.hl{border-color:rgba(255,210,63,.6);box-shadow:0 0 0 1px rgba(255,210,63,.2),0 20px 60px -20px rgba(255,210,63,.45)}
@@ -651,7 +651,7 @@ var PC = {mint:"#3ecfb2", sky:"#5cb8ff"};
 function $(id){return document.getElementById(id)}
 function each(sel,fn){Array.prototype.forEach.call(document.querySelectorAll(sel),fn)}
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
-function money(n){return CUR + Math.round(n).toLocaleString("en-US")}
+function money(n){if(typeof n==="string"&&/-/.test(n)){var a=n.split("-");return CUR+Math.round(+a[0]).toLocaleString("en-US")+" to "+CUR+Math.round(+a[1]).toLocaleString("en-US")}return CUR+Math.round(+n||0).toLocaleString("en-US")}
 function pad(n){return (n<10?"0":"")+n}
 function parseD(s){var p=s.split("-");return new Date(Date.UTC(+p[0],+p[1]-1,+p[2]))}
 function fmtD(d){return d.toISOString().slice(0,10)}

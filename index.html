@@ -743,11 +743,11 @@ function renderHero(){
 }
 
 var endT=new Date(M.endTimeISO||"2026-11-18T23:59:59+04:00").getTime();
-var startT=new Date(START+"T00:00:00+04:00").getTime();
+var startT=new Date(M.launchTimeISO||(START+"T00:00:00+04:00")).getTime();
 var cdB=null, deadlineTxt=(function(){var d=parseD(END);return d.getUTCDate()+" "+MO[d.getUTCMonth()]})();
 function tickClock(){
   var now=Date.now(), pre=now<startT, ms=Math.max(0,(pre?startT:endT)-now);
-  $("cdLabel").textContent=pre?"Challenge starts in":(ms>0?"Time left until the "+deadlineTxt+" deadline":"Challenge over");
+  $("cdLabel").textContent=pre?"Launch in":(ms>0?"Time left until the "+deadlineTxt+" deadline":"Challenge over");
   var s=Math.floor(ms/1000),d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),sc=s%60;
   cdB=cdB||$("cd").querySelectorAll("b"); cdB[0].textContent=pad(d);cdB[1].textContent=pad(h);cdB[2].textContent=pad(m);cdB[3].textContent=pad(sc);
   try{$("clock").textContent=new Intl.DateTimeFormat("en-GB",{timeZone:TZ,hour:"2-digit",minute:"2-digit",second:"2-digit"}).format(new Date())}catch(e){}

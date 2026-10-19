@@ -27,6 +27,7 @@ window.BOARD_DATA = {
     "days": 30,
     "timeZone": "Asia/Tbilisi",
     "endTimeISO": "2026-11-18T23:59:59+04:00",
+    "launchTimeISO": "2026-10-20T16:34:00+04:00",
     "lastUpdated": "2026-10-19",
     "milestones": [
       { "amount": 750,   "label": "First sale" },

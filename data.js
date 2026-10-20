@@ -3,7 +3,7 @@
   ------------------------------------------------------------
   This is the ONLY file you need to edit each day (copy the numbers over from Notion).
   Everything lives in window.BOARD_DATA below. It is JSON shaped (quoted keys), so a JSON export from Notion can be pasted straight in.
-  Day 1 is Tue 20 Oct and day 30 is Wed 18 Nov. The countdown runs to 23:59 Tbilisi time on 18 Nov (endTimeISO), the deadline for verified banked money. (Window changed by Tyrone on 19 Oct 2026.)
+  Day 1 is Thu 22 Oct (launch 16:34 Tbilisi) and day 30 is Fri 20 Nov. The countdown runs to 23:59 Tbilisi time on 20 Nov (endTimeISO), the deadline for verified banked money. Tue 20 and Wed 21 Oct are prep days and score nothing. (Window moved back 48 hours by Tyrone on 20 Oct 2026.)
 
   Rules
   1. "payments" only holds verified, settled money that has actually landed. That is what "banked" means.
@@ -22,12 +22,12 @@ window.BOARD_DATA = {
     "site": "aiondevs.io",
     "goal": 10000,
     "currencySymbol": "$",
-    "startDate": "2026-10-20",
-    "endDate": "2026-11-18",
+    "startDate": "2026-10-22",
+    "endDate": "2026-11-20",
     "days": 30,
     "timeZone": "Asia/Tbilisi",
-    "endTimeISO": "2026-11-18T23:59:59+04:00",
-    "launchTimeISO": "2026-10-20T16:34:00+04:00",
+    "endTimeISO": "2026-11-20T23:59:59+04:00",
+    "launchTimeISO": "2026-10-22T16:34:00+04:00",
     "lastUpdated": "2026-10-20",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
@@ -57,11 +57,10 @@ window.BOARD_DATA = {
 
   /* Daily challenges done, as recorded in Notion. Ticks on the board itself are also saved in this browser.
      { "date": "2026-10-19", "player": "tyrone" } */
-  "challengeLog": [
-    { "date": "2026-10-20", "player": "tyberger" }
-  ],
+  "challengeLog": [],
+  /* 20 Oct tick by Ty Berger removed: 20 and 21 Oct are prep days and do not score. */
 
-  /* Challenge for each day. Index 0 is day 1 (20 Oct). If a list is shorter than 30 it repeats. */
+  /* Challenge for each day. Index 0 is day 1 (22 Oct). If a list is shorter than 30 it repeats. */
   "challenges": {
     "tyrone": [
       "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",
@@ -105,8 +104,8 @@ window.BOARD_DATA = {
       "title": "LinkedIn push to UAE firms",
       "summary": "Ty Berger's launch post is live. Ten LinkedIn messages to UAE firms running a customer AI assistant, then a Starter ask on any reply.",
       "steps": [
-        { "id": "m1s1", "who": "tyberger", "text": "Launch post live on LinkedIn", "due": "2026-10-20", "done": true },
-        { "id": "m1s2", "who": "tyberger", "text": "Messages 1 to 5 sent", "due": "2026-10-20", "done": true },
+        { "id": "m1s1", "who": "tyberger", "text": "Launch post live on LinkedIn (prep day 1)", "due": "2026-10-20", "done": true },
+        { "id": "m1s2", "who": "tyberger", "text": "Messages 1 to 5 sent (prep day 1)", "due": "2026-10-20", "done": true },
         { "id": "m1s3", "who": "tyberger", "text": "Messages 6 to 10 sent", "due": "2026-10-21", "done": false },
         { "id": "m1s4", "who": "both", "text": "Aim for 2 scope calls booked", "due": "2026-10-23", "done": false }
       ]
@@ -134,8 +133,8 @@ window.BOARD_DATA = {
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
   "completedTasks": [
-    { "date": "2026-10-20", "time": "08:22", "player": "tyberger", "text": "Published the AI Work Check launch post on LinkedIn", "tag": "Launch" },
-    { "date": "2026-10-20", "time": "12:34", "player": "tyberger", "text": "Sent the first 5 LinkedIn messages to UAE prospects", "tag": "Outreach" }
+    { "date": "2026-10-20", "time": "08:22", "player": "tyberger", "text": "Prep day 1: published the AI Work Check launch post on LinkedIn", "tag": "Prep" },
+    { "date": "2026-10-20", "time": "12:34", "player": "tyberger", "text": "Prep day 1: sent the first 5 LinkedIn messages to UAE prospects", "tag": "Prep" }
   ],
 
   /* Social and content. Set "connected": true once the numbers come from a real source. */

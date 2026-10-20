@@ -28,7 +28,7 @@ window.BOARD_DATA = {
     "timeZone": "Asia/Tbilisi",
     "endTimeISO": "2026-11-18T23:59:59+04:00",
     "launchTimeISO": "2026-10-20T16:34:00+04:00",
-    "lastUpdated": "2026-10-19",
+    "lastUpdated": "2026-10-20",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -57,7 +57,9 @@ window.BOARD_DATA = {
 
   /* Daily challenges done, as recorded in Notion. Ticks on the board itself are also saved in this browser.
      { "date": "2026-10-19", "player": "tyrone" } */
-  "challengeLog": [],
+  "challengeLog": [
+    { "date": "2026-10-20", "player": "tyberger" }
+  ],
 
   /* Challenge for each day. Index 0 is day 1 (20 Oct). If a list is shorter than 30 it repeats. */
   "challenges": {
@@ -100,36 +102,41 @@ window.BOARD_DATA = {
   /* Top 3 moves this week. Step ticks are saved in this browser; set "done": true here to lock them in from Notion. */
   "moves": [
     {
-      "title": "Ship the UAE launch",
-      "summary": "Tyrone OKs the v4 copy, then Ty Berger posts it and starts the DMs.",
+      "title": "LinkedIn push to UAE firms",
+      "summary": "Ty Berger's launch post is live. Ten LinkedIn messages to UAE firms running a customer AI assistant, then a Starter ask on any reply.",
       "steps": [
-        { "id": "m1s1", "who": "tyrone",   "text": "Tyrone OKs Ty Berger's v4 UAE launch copy", "due": "2026-10-20", "done": false },
-        { "id": "m1s2", "who": "tyberger", "text": "Ty Berger posts the launch and sends 10 LinkedIn DMs", "due": "2026-10-21", "done": false }
+        { "id": "m1s1", "who": "tyberger", "text": "Launch post live on LinkedIn", "due": "2026-10-20", "done": true },
+        { "id": "m1s2", "who": "tyberger", "text": "Messages 1 to 5 sent", "due": "2026-10-20", "done": true },
+        { "id": "m1s3", "who": "tyberger", "text": "Messages 6 to 10 sent", "due": "2026-10-21", "done": false },
+        { "id": "m1s4", "who": "both", "text": "Aim for 2 scope calls booked", "due": "2026-10-23", "done": false }
       ]
     },
     {
-      "title": "LinkedIn prospects (Ty Berger)",
-      "summary": "Warm-contacts move dropped 19 Oct 17:55. Ty Berger runs LinkedIn prospects for Starter asks.",
+      "title": "Fast lane for 3 strong leads",
+      "summary": "Three leads with checked email addresses go out from our main inbox this week instead of waiting for November.",
       "steps": [
-        { "id": "m2s1", "who": "tyberger", "text": "Ty Berger runs LinkedIn prospects (replaces warm contacts)", "due": "2026-10-21", "done": false },
-        { "id": "m2s2", "who": "both",   "text": "Aim for 2 scope calls booked", "due": "2026-10-23", "done": false },
-        { "id": "m2s3", "who": "both",   "text": "First Starter verified banked", "due": "2026-10-30", "done": false }
+        { "id": "m2s1", "who": "tyrone", "text": "Tyrone approves the 3 final messages", "due": "2026-10-21", "done": false },
+        { "id": "m2s2", "who": "tyrone", "text": "The 3 messages go out", "due": "2026-10-22", "done": false },
+        { "id": "m2s3", "who": "both", "text": "First Starter verified banked", "due": "2026-10-30", "done": false }
       ]
     },
     {
-      "title": "Cold outreach, done safely",
-      "summary": "Approve the 27 drafts, check sending health, then first sends.",
+      "title": "Ready to take money",
+      "summary": "Confirm how clients pay so a yes can be invoiced the same day. Cold email follows in November.",
       "steps": [
-        { "id": "m3s1", "who": "both", "text": "The 27 cold drafts approved at the Friday review", "due": "2026-10-23", "done": false },
-        { "id": "m3s2", "who": "both", "text": "Sending health check", "due": "2026-10-30", "done": false },
-        { "id": "m3s3", "who": "both", "text": "First sends, no earlier than this date", "due": "2026-11-02", "done": false }
+        { "id": "m3s1", "who": "tyrone", "text": "Tyrone confirms the invoicing company and payment route", "due": "2026-10-21", "done": false },
+        { "id": "m3s2", "who": "tyrone", "text": "Booking page shows the new offer wording", "due": "2026-10-21", "done": false },
+        { "id": "m3s3", "who": "both", "text": "First cold sends, no earlier than this date", "due": "2026-11-02", "done": false }
       ]
     }
   ],
 
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
-  "completedTasks": [],
+  "completedTasks": [
+    { "date": "2026-10-20", "time": "08:22", "player": "tyberger", "text": "Published the AI Work Check launch post on LinkedIn", "tag": "Launch" },
+    { "date": "2026-10-20", "time": "12:34", "player": "tyberger", "text": "Sent the first 5 LinkedIn messages to UAE prospects", "tag": "Outreach" }
+  ],
 
   /* Social and content. Set "connected": true once the numbers come from a real source. */
   "social": [

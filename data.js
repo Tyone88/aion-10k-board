@@ -28,7 +28,7 @@ window.BOARD_DATA = {
     "timeZone": "Asia/Tbilisi",
     "endTimeISO": "2026-11-20T23:59:59+04:00",
     "launchTimeISO": "2026-10-22T16:34:00+04:00",
-    "lastUpdated": "2026-10-20",
+    "lastUpdated": "2026-10-21",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -123,8 +123,8 @@ window.BOARD_DATA = {
       "title": "Ready to take money",
       "summary": "Confirm how clients pay so a yes can be invoiced the same day. Cold email follows in November.",
       "steps": [
-        { "id": "m3s1", "who": "tyrone", "text": "Tyrone confirms the invoicing company and payment route", "due": "2026-10-21", "done": false },
-        { "id": "m3s2", "who": "tyrone", "text": "Booking page shows the new offer wording", "due": "2026-10-21", "done": false },
+        { "id": "m3s1", "who": "tyrone", "text": "Tyrone confirms the invoicing company and payment route", "due": "2026-10-21", "done": true },
+        { "id": "m3s2", "who": "tyrone", "text": "Booking page shows the new offer wording", "due": "2026-10-21", "done": true },
         { "id": "m3s3", "who": "both", "text": "First cold sends, no earlier than this date", "due": "2026-11-02", "done": false }
       ]
     }
@@ -133,6 +133,8 @@ window.BOARD_DATA = {
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
   "completedTasks": [
+    { "date": "2026-10-21", "time": "08:11", "player": "tyrone", "text": "Prep day 2: booking page updated with the $750 Starter offer", "tag": "Prep" },
+    { "date": "2026-10-20", "time": "19:26", "player": "tyrone", "text": "Prep day 1: confirmed how clients pay, so a yes can be invoiced the same day", "tag": "Prep" },
     { "date": "2026-10-20", "time": "08:22", "player": "tyberger", "text": "Prep day 1: published the AI Work Check launch post on LinkedIn", "tag": "Prep" },
     { "date": "2026-10-20", "time": "12:34", "player": "tyberger", "text": "Prep day 1: sent the first 5 LinkedIn messages to UAE prospects", "tag": "Prep" }
   ],

@@ -548,7 +548,7 @@ h1{font-size:92px;font-weight:900;letter-spacing:-.045em;line-height:.95}
     <div class="k" id="cdLabel">Time left until the deadline</div>
     <div class="cd" id="cd"><div><b>00</b><span>Days</span></div><div><b>00</b><span>Hours</span></div><div><b>00</b><span>Mins</span></div><div class="sec"><b>00</b><span>Secs</span></div></div>
     <div class="daystrip" id="daystrip"></div>
-    <div class="dates"><span id="dStart">Day 1, Thu 22 Oct</span><span id="dEnd">Day 30</span></div>
+    <div class="dates"><span id="dStart">Day 1, Mon 26 Oct</span><span id="dEnd">Day 30</span></div>
     <div class="k mk" style="margin-top:6px">Milestones</div>
     <div class="mtrack" id="mtrack"><div class="fill" id="mfill"></div></div>
   </div>
@@ -569,7 +569,7 @@ h1{font-size:92px;font-weight:900;letter-spacing:-.045em;line-height:.95}
     <div class="card chal-left reveal">
       <div class="dayctl">
         <button class="ibtn" id="prevDay" aria-label="Previous day">&#8249;</button>
-        <div class="when" id="selWhen">Thursday 22 Oct<small>Day 1 of 30</small></div>
+        <div class="when" id="selWhen">Monday 26 Oct<small>Day 1 of 30</small></div>
         <button class="ibtn" id="nextDay" aria-label="Next day">&#8250;</button>
         <div class="spacer"></div>
         <button class="tbtn" id="toToday">Back to today</button>
@@ -597,7 +597,7 @@ h1{font-size:92px;font-weight:900;letter-spacing:-.045em;line-height:.95}
 <!-- 5 + 6. MOVES + FEED -->
 <section class="block" id="moves">
   <div class="sec-head reveal"><div><div class="lbl"><span class="n">05</span>This week</div><h2>Top 3 <em>moves</em></h2></div>
-    <div class="note">Prep days are Tue 20 and Wed 21 Oct. Week 1 runs Thu 22 Oct to Wed 28 Oct, with the follow through into week 2. Tap a step when it is done.</div></div>
+    <div class="note">Prep days are 20 to 25 Oct. Week 1 runs Mon 26 Oct to Sun 1 Nov, with the follow through into week 2. Tap a step when it is done.</div></div>
   <div class="two">
     <div class="moves" id="movesGrid"></div>
     <div class="card feed reveal">
@@ -673,7 +673,7 @@ var S; try{S=JSON.parse(localStorage.getItem(LS_KEY))||{}}catch(e){S={}}
 S.ticks=S.ticks||{}; S.steps=S.steps||{}; S.log=S.log||[];
 function save(){try{localStorage.setItem(LS_KEY,JSON.stringify(S))}catch(e){}}
 
-var START=M.startDate||"2026-10-22", END=M.endDate||"2026-11-20";
+var START=M.startDate||"2026-10-26", END=M.endDate||"2026-11-24";
 var TOTAL=M.days||Math.min(30,diffDays(START,END)+1);
 var DEADLINE_EXTRA=diffDays(addDays(START,TOTAL-1),END)>0;
 var TODAY=tzToday();
@@ -742,7 +742,7 @@ function renderHero(){
   $("updated").textContent="Data updated "+nice(M.lastUpdated||TODAY);
 }
 
-var endT=new Date(M.endTimeISO||"2026-11-20T23:59:59+04:00").getTime();
+var endT=new Date(M.endTimeISO||"2026-11-24T23:59:59+04:00").getTime();
 var startT=new Date(M.launchTimeISO||(START+"T00:00:00+04:00")).getTime();
 var cdB=null, deadlineTxt=(function(){var d=parseD(END);return d.getUTCDate()+" "+MO[d.getUTCMonth()]})();
 function tickClock(){

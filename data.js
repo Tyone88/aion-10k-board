@@ -3,7 +3,7 @@
   ------------------------------------------------------------
   This is the ONLY file you need to edit each day (copy the numbers over from Notion).
   Everything lives in window.BOARD_DATA below. It is JSON shaped (quoted keys), so a JSON export from Notion can be pasted straight in.
-  Day 1 is Thu 22 Oct (launch 16:34 Tbilisi) and day 30 is Fri 20 Nov. The countdown runs to 23:59 Tbilisi time on 20 Nov (endTimeISO), the deadline for verified banked money. Tue 20 and Wed 21 Oct are prep days and score nothing. (Window moved back 48 hours by Tyrone on 20 Oct 2026.)
+  Day 1 is Mon 26 Oct (launch 00:00 Tbilisi) and day 30 is Tue 24 Nov. The countdown runs to 23:59 Tbilisi time on 24 Nov (endTimeISO), the deadline for verified banked money. 20 to 25 Oct are prep days and score nothing. (Window moved to Mon 26 Oct by Tyrone on 22 Oct 2026.)
 
   Rules
   1. "payments" only holds verified, settled money that has actually landed. That is what "banked" means.
@@ -22,13 +22,13 @@ window.BOARD_DATA = {
     "site": "aiondevs.io",
     "goal": 10000,
     "currencySymbol": "$",
-    "startDate": "2026-10-22",
-    "endDate": "2026-11-20",
+    "startDate": "2026-10-26",
+    "endDate": "2026-11-24",
     "days": 30,
     "timeZone": "Asia/Tbilisi",
-    "endTimeISO": "2026-11-20T23:59:59+04:00",
-    "launchTimeISO": "2026-10-22T16:34:00+04:00",
-    "lastUpdated": "2026-10-21",
+    "endTimeISO": "2026-11-24T23:59:59+04:00",
+    "launchTimeISO": "2026-10-26T00:00:00+04:00",
+    "lastUpdated": "2026-10-22",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -60,7 +60,7 @@ window.BOARD_DATA = {
   "challengeLog": [],
   /* 20 Oct tick by Ty Berger removed: 20 and 21 Oct are prep days and do not score. */
 
-  /* Challenge for each day. Index 0 is day 1 (22 Oct). If a list is shorter than 30 it repeats. */
+  /* Challenge for each day. Index 0 is day 1 (26 Oct). If a list is shorter than 30 it repeats. */
   "challenges": {
     "tyrone": [
       "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",

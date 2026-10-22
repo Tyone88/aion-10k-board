@@ -111,11 +111,12 @@ window.BOARD_DATA = {
       ]
     },
     {
-      "title": "Fast lane for 3 strong leads",
-      "summary": "Three leads with checked email addresses go out from our main inbox this week instead of waiting for November.",
+      "title": "Fast lane for 4 strong leads",
+      "summary": "Four leads with checked email addresses got a first email on 22 Oct. Follow-ups go Mon 26 Oct if nobody replies.",
       "steps": [
-        { "id": "m2s1", "who": "tyrone", "text": "Tyrone approves the 3 final messages", "due": "2026-10-21", "done": false },
-        { "id": "m2s2", "who": "tyrone", "text": "The 3 messages go out", "due": "2026-10-22", "done": false },
+        { "id": "m2s1", "who": "tyrone", "text": "Tyrone approves the final messages (4 leads)", "due": "2026-10-22", "done": true },
+        { "id": "m2s2", "who": "tyrone", "text": "The 4 messages go out (prep day 3)", "due": "2026-10-22", "done": true },
+        { "id": "m2s4", "who": "tyrone", "text": "Follow-ups approved and ready", "due": "2026-10-26", "done": false },
         { "id": "m2s3", "who": "both", "text": "First Starter verified banked", "due": "2026-10-30", "done": false }
       ]
     },
@@ -133,6 +134,8 @@ window.BOARD_DATA = {
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
   "completedTasks": [
+    { "date": "2026-10-22", "time": "18:18", "player": "tyrone", "text": "Prep day 3: referral partner call locked for launch day", "tag": "Prep" },
+    { "date": "2026-10-22", "time": "10:02", "player": "tyrone", "text": "Prep day 3: first 4 cold emails sent to checked leads", "tag": "Prep" },
     { "date": "2026-10-21", "time": "08:11", "player": "tyrone", "text": "Prep day 2: booking page updated with the $750 Starter offer", "tag": "Prep" },
     { "date": "2026-10-20", "time": "19:26", "player": "tyrone", "text": "Prep day 1: confirmed how clients pay, so a yes can be invoiced the same day", "tag": "Prep" },
     { "date": "2026-10-20", "time": "08:22", "player": "tyberger", "text": "Prep day 1: published the AI Work Check launch post on LinkedIn", "tag": "Prep" },
@@ -140,12 +143,13 @@ window.BOARD_DATA = {
   ],
 
   /* Social and content. Set "connected": true once the numbers come from a real source. */
+  /* social: Zernio, Aion accounts only, posts from Day 1 (22 Oct) on. Checked 22 Oct 07:20 Tbilisi: no challenge-window posts yet. Clicks to the fit check are not tracked by Zernio, so they stay 0 until a link tracker is added. */
   "social": [
-    { "platform": "LinkedIn",  "posts": 0, "reach": 0, "clicks": 0, "connected": false },
-    { "platform": "Instagram", "posts": 0, "reach": 0, "clicks": 0, "connected": false },
-    { "platform": "Facebook",  "posts": 0, "reach": 0, "clicks": 0, "connected": false },
-    { "platform": "YouTube",   "posts": 0, "reach": 0, "clicks": 0, "connected": false },
-    { "platform": "TikTok",    "posts": 0, "reach": 0, "clicks": 0, "connected": false }
+    { "platform": "LinkedIn",  "posts": 0, "reach": 0, "clicks": 0, "connected": true },
+    { "platform": "Instagram", "posts": 0, "reach": 0, "clicks": 0, "connected": true },
+    { "platform": "Facebook",  "posts": 0, "reach": 0, "clicks": 0, "connected": true },
+    { "platform": "YouTube",   "posts": 0, "reach": 0, "clicks": 0, "connected": true },
+    { "platform": "TikTok",    "posts": 0, "reach": 0, "clicks": 0, "connected": true }
   ],
 
   /* Locked prices. All plus VAT. */

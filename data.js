@@ -28,7 +28,7 @@ window.BOARD_DATA = {
     "timeZone": "Asia/Tbilisi",
     "endTimeISO": "2026-11-24T23:59:59+04:00",
     "launchTimeISO": "2026-10-26T00:00:00+04:00",
-    "lastUpdated": "2026-10-22",
+    "lastUpdated": "2026-10-23",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -112,11 +112,12 @@ window.BOARD_DATA = {
     },
     {
       "title": "Fast lane for 4 strong leads",
-      "summary": "Four leads with checked email addresses got a first email on 22 Oct. Follow-ups go Mon 26 Oct if nobody replies.",
+      "summary": "Four leads with checked email addresses got a first email on 22 Oct and a follow-up on 23 Oct. One said no thanks. The other three get one last short note on Wed 28 Oct.",
       "steps": [
         { "id": "m2s1", "who": "tyrone", "text": "Tyrone approves the final messages (4 leads)", "due": "2026-10-22", "done": true },
         { "id": "m2s2", "who": "tyrone", "text": "The 4 messages go out (prep day 3)", "due": "2026-10-22", "done": true },
-        { "id": "m2s4", "who": "tyrone", "text": "Follow-ups approved and ready", "due": "2026-10-26", "done": false },
+        { "id": "m2s4", "who": "tyrone", "text": "Follow-ups sent (went out early, 23 Oct)", "due": "2026-10-26", "done": true },
+        { "id": "m2s5", "who": "tyrone", "text": "Last notes to the 3 open leads", "due": "2026-10-28", "done": false },
         { "id": "m2s3", "who": "both", "text": "First Starter verified banked", "due": "2026-10-30", "done": false }
       ]
     },
@@ -134,6 +135,7 @@ window.BOARD_DATA = {
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
   "completedTasks": [
+    { "date": "2026-10-23", "time": "09:01", "player": "tyberger", "text": "Prep day 4: free mini bot test opener approved for a pilot", "tag": "Prep" },
     { "date": "2026-10-22", "time": "18:18", "player": "tyrone", "text": "Prep day 3: referral partner call locked for launch day", "tag": "Prep" },
     { "date": "2026-10-22", "time": "10:02", "player": "tyrone", "text": "Prep day 3: first 4 cold emails sent to checked leads", "tag": "Prep" },
     { "date": "2026-10-21", "time": "08:11", "player": "tyrone", "text": "Prep day 2: booking page updated with the $750 Starter offer", "tag": "Prep" },

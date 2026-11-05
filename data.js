@@ -3,7 +3,7 @@
   ------------------------------------------------------------
   This is the ONLY file you need to edit each day (copy the numbers over from Notion).
   Everything lives in window.BOARD_DATA below. It is JSON shaped (quoted keys), so a JSON export from Notion can be pasted straight in.
-  Day 1 is Mon 26 Oct (launch 00:00 Tbilisi) and day 30 is Tue 24 Nov. The countdown runs to 23:59 Tbilisi time on 24 Nov (endTimeISO), the deadline for verified banked money. 20 to 25 Oct are prep days and score nothing. (Window moved to Mon 26 Oct by Tyrone on 22 Oct 2026.)
+  Day 1 is Mon 2 Nov (launch 00:00 Tbilisi) and day 30 is Tue 1 Dec. The countdown runs to 23:59 Tbilisi time on 1 Dec (endTimeISO), the deadline for verified banked money. Everything before 2 Nov is prep and scores nothing. (Window moved to Mon 2 Nov by Tyrone on 26 Oct 2026.) AED money counts only at the USD that lands in Bank of Georgia after fees (Tyrone, 4 Nov).
 
   Rules
   1. "payments" only holds verified, settled money that has actually landed. That is what "banked" means.
@@ -22,13 +22,13 @@ window.BOARD_DATA = {
     "site": "aiondevs.io",
     "goal": 10000,
     "currencySymbol": "$",
-    "startDate": "2026-10-26",
-    "endDate": "2026-11-24",
+    "startDate": "2026-11-02",
+    "endDate": "2026-12-01",
     "days": 30,
     "timeZone": "Asia/Tbilisi",
-    "endTimeISO": "2026-11-24T23:59:59+04:00",
-    "launchTimeISO": "2026-10-26T00:00:00+04:00",
-    "lastUpdated": "2026-10-23",
+    "endTimeISO": "2026-12-01T23:59:59+04:00",
+    "launchTimeISO": "2026-11-02T00:00:00+04:00",
+    "lastUpdated": "2026-11-05",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -49,7 +49,9 @@ window.BOARD_DATA = {
   /* Pipeline cards from the Notion plan. stage is one of: lead, call, proposal, invoiced.
      When the money clears, remove the card here and add a row to "payments". Payments show in the Paid and verified column automatically.
      { "id": "p1", "label": "Warm contact 1", "offer": "Starter", "value": 750, "stage": "lead", "owner": "tyrone", "next": "Personal ask", "due": "2026-10-21" } */
-  "pipeline": [],
+  "pipeline": [
+    { "id": "p1", "label": "Dubai coworking space", "offer": "Front Desk Team, 899 AED a month (about $245)", "value": 245, "stage": "lead", "owner": "tyberger", "next": "Send the aiondevs.io/book link and ask for 10 minutes; one follow-up by Fri 6 Nov 12:00, then cold", "due": "2026-11-05" }
+  ],
 
   /* Scoring events that are not payments or daily challenges. type is "call_booked" or "proposal_sent"
      { "date": "2026-10-22", "player": "tyrone", "type": "call_booked", "label": "Scope call, warm contact 2" } */
@@ -57,77 +59,66 @@ window.BOARD_DATA = {
 
   /* Daily challenges done, as recorded in Notion. Ticks on the board itself are also saved in this browser.
      { "date": "2026-10-19", "player": "tyrone" } */
-  "challengeLog": [],
+  "challengeLog": [
+    { "date": "2026-11-02", "player": "tyberger" }
+  ],
   /* 20 Oct tick by Ty Berger removed: 20 and 21 Oct are prep days and do not score. */
 
-  /* Challenge for each day. Index 0 is day 1 (26 Oct). If a list is shorter than 30 it repeats. */
+  /* Challenge for each day. Index 0 is day 1 (Mon 2 Nov). If a list is shorter than 30 it repeats. */
   "challenges": {
     "tyrone": [
-      "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",
-      "Approve the v4 UAE launch copy",
-      "LinkedIn prospects outreach (Ty Berger owns; warm contacts dropped)",
-      "Ask 2 past clients for a referral",
-      "Book 1 scope call",
-      "Review and approve the cold email drafts",
-      "Post one AI Work Check LinkedIn post",
+      "Run the Dubai route review with Ty Berger at 10:00",
+      "Send 10 personal LinkedIn messages",
+      "Ship the Kai booking wording and the new Dubai video ad",
+      "Film the shoot-day update and price every reply the same day",
+      "Book 1 call from a cold email or LinkedIn reply",
       "Send 3 follow ups to open conversations",
-      "Record a 60 second Loom on what our team found this week",
-      "Book 1 scope call",
-      "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",
       "Ask 2 past clients for a referral",
-      "Send 1 proposal or a clear next step to a LinkedIn prospect",
-      "Post one AI Work Check LinkedIn post",
+      "Book 1 call",
+      "Send 1 proposal or a clear next step to a warm lead",
       "Reply to every comment and DM within 2 hours"
     ],
     "tyberger": [
-      "Post one AI Work Check LinkedIn post",
-      "Finish the v4 UAE launch copy",
-      "Post the UAE launch and send 10 LinkedIn DMs",
-      "Send 5 personal LinkedIn notes to LinkedIn prospects (Ty Berger)",
-      "Share one short case style post with no client names",
-      "Book 1 scope call",
-      "Comment on 10 posts from UAE founders",
-      "Ask 2 past clients for a referral",
-      "Send 10 LinkedIn DMs to new connections",
-      "Post one AI Work Check LinkedIn post",
-      "Book 1 scope call",
-      "Cut one short video clip for Instagram and TikTok",
+      "Give the go on the Dubai clinic emails and answer the UAE licence question",
+      "Message the Dubai coworking lead and get the call booked",
+      "Send the coworking lead the aiondevs.io/book link with the demo pack",
+      "Send the booking link, message 6 new LinkedIn accepts, WhatsApp one past client",
+      "Book 1 call",
       "Send 3 follow ups to open conversations",
-      "Post one AI Work Check LinkedIn post",
-      "Run the cold sending health check"
+      "Message every new LinkedIn accept with the booking link",
+      "Book 1 call",
+      "Send 1 priced offer to a warm lead",
+      "Reply to every comment and DM within 2 hours"
     ]
   },
 
   /* Top 3 moves this week. Step ticks are saved in this browser; set "done": true here to lock them in from Notion. */
   "moves": [
     {
-      "title": "LinkedIn push to UAE firms",
-      "summary": "Ty Berger's launch post is live. Ten LinkedIn messages to UAE firms running a customer AI assistant, then a Starter ask on any reply.",
+      "title": "Get the coworking lead on a call",
+      "summary": "Our only priced lead, Front Desk Team at 899 AED a month. The booking link and demo pack go today, one follow-up Friday, then cold.",
       "steps": [
-        { "id": "m1s1", "who": "tyberger", "text": "Launch post live on LinkedIn (prep day 1)", "due": "2026-10-20", "done": true },
-        { "id": "m1s2", "who": "tyberger", "text": "Messages 1 to 5 sent (prep day 1)", "due": "2026-10-20", "done": true },
-        { "id": "m1s3", "who": "tyberger", "text": "Messages 6 to 10 sent", "due": "2026-10-21", "done": false },
-        { "id": "m1s4", "who": "both", "text": "Aim for 2 scope calls booked", "due": "2026-10-23", "done": false }
+        { "id": "m1s1", "who": "tyberger", "text": "Front Desk Team offer sent", "due": "2026-11-03", "done": true },
+        { "id": "m1s2", "who": "tyberger", "text": "Booking link and demo pack sent, with proof", "due": "2026-11-05", "done": false },
+        { "id": "m1s3", "who": "tyberger", "text": "One follow-up if no reply", "due": "2026-11-06", "done": false }
       ]
     },
     {
-      "title": "Fast lane for 4 strong leads",
-      "summary": "Four leads with checked email addresses got a first email on 22 Oct and a follow-up on 23 Oct. One said no thanks. The other three get one last short note on Wed 28 Oct.",
+      "title": "Turn cold email into replies",
+      "summary": "About 107 cold emails out since 2 Nov and no human replies yet. Load the new US and Dubai batches, then check delivery and write a new opening line before adding volume.",
       "steps": [
-        { "id": "m2s1", "who": "tyrone", "text": "Tyrone approves the final messages (4 leads)", "due": "2026-10-22", "done": true },
-        { "id": "m2s2", "who": "tyrone", "text": "The 4 messages go out (prep day 3)", "due": "2026-10-22", "done": true },
-        { "id": "m2s4", "who": "tyrone", "text": "Follow-ups sent (went out early, 23 Oct)", "due": "2026-10-26", "done": true },
-        { "id": "m2s5", "who": "tyrone", "text": "Last notes to the 3 open leads", "due": "2026-10-28", "done": false },
-        { "id": "m2s3", "who": "both", "text": "First Starter verified banked", "due": "2026-10-30", "done": false }
+        { "id": "m2s1", "who": "both", "text": "Batch 05 and the new US leads loaded, with readback", "due": "2026-11-05", "done": false },
+        { "id": "m2s2", "who": "both", "text": "Delivery and placement check on all 4 inboxes plus a new opening line", "due": "2026-11-05", "done": false },
+        { "id": "m2s3", "who": "both", "text": "30 a day per inbox only if bounces stay under 2%", "due": "2026-11-09", "done": false }
       ]
     },
     {
-      "title": "Ready to take money",
-      "summary": "Confirm how clients pay so a yes can be invoiced the same day. Cold email follows in November.",
+      "title": "Dubai ad chats into booked calls",
+      "summary": "The Kai video ad runs on WhatsApp at $10 a day to 11 Nov. Every chat gets the booking link the same hour. The test is judged on calls booked, not cost per chat.",
       "steps": [
-        { "id": "m3s1", "who": "tyrone", "text": "Tyrone confirms the invoicing company and payment route", "due": "2026-10-21", "done": true },
-        { "id": "m3s2", "who": "tyrone", "text": "Booking page shows the new offer wording", "due": "2026-10-21", "done": true },
-        { "id": "m3s3", "who": "both", "text": "First cold sends, no earlier than this date", "due": "2026-11-02", "done": false }
+        { "id": "m3s1", "who": "tyrone", "text": "Kai video ad live, old carousel paused", "due": "2026-11-04", "done": true },
+        { "id": "m3s2", "who": "tyrone", "text": "Booking link live on aiondevs.io/book and sent by Kai", "due": "2026-11-03", "done": true },
+        { "id": "m3s3", "who": "both", "text": "First call booked from an ad chat", "due": "2026-11-11", "done": false }
       ]
     }
   ],
@@ -135,13 +126,16 @@ window.BOARD_DATA = {
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
   "completedTasks": [
-    { "date": "2026-10-23", "time": "09:01", "player": "tyberger", "text": "Prep day 4: free mini bot test opener approved for a pilot", "tag": "Prep" },
-    { "date": "2026-10-22", "time": "18:18", "player": "tyrone", "text": "Prep day 3: referral partner call locked for launch day", "tag": "Prep" },
-    { "date": "2026-10-22", "time": "10:02", "player": "tyrone", "text": "Prep day 3: first 4 cold emails sent to checked leads", "tag": "Prep" },
-    { "date": "2026-10-21", "time": "08:11", "player": "tyrone", "text": "Prep day 2: booking page updated with the $750 Starter offer", "tag": "Prep" },
-    { "date": "2026-10-20", "time": "19:26", "player": "tyrone", "text": "Prep day 1: confirmed how clients pay, so a yes can be invoiced the same day", "tag": "Prep" },
-    { "date": "2026-10-20", "time": "08:22", "player": "tyberger", "text": "Prep day 1: published the AI Work Check launch post on LinkedIn", "tag": "Prep" },
-    { "date": "2026-10-20", "time": "12:34", "player": "tyberger", "text": "Prep day 1: sent the first 5 LinkedIn messages to UAE prospects", "tag": "Prep" }
+    { "date": "2026-11-04", "time": "16:47", "player": "tyrone", "text": "New Dubai Kai video ad live on WhatsApp, $10 a day to 11 Nov; old carousel paused", "tag": "Ads" },
+    { "date": "2026-11-04", "time": "16:13", "player": "tyberger", "text": "11 new US leads loaded into the US cold campaign", "tag": "Outreach" },
+    { "date": "2026-11-04", "time": "09:32", "player": "tyrone", "text": "Kai now offers to book the call, send reminders and manage it all", "tag": "Kai" },
+    { "date": "2026-11-03", "time": "18:58", "player": "tyrone", "text": "Booking page aiondevs.io/book live and sent by Kai on every channel", "tag": "Booking" },
+    { "date": "2026-11-03", "time": "15:40", "player": "tyberger", "text": "13 Dubai salons emailed with the Front Desk Team offer", "tag": "Outreach" },
+    { "date": "2026-11-03", "time": "12:03", "player": "tyrone", "text": "10 personal LinkedIn messages sent", "tag": "Outreach" },
+    { "date": "2026-11-03", "time": "10:50", "player": "tyberger", "text": "Front Desk Team offer sent to the Dubai coworking lead, 899 AED a month", "tag": "Pipeline" },
+    { "date": "2026-11-02", "time": "20:00", "player": "tyrone", "text": "First UK and US cold emails out, 28 leads across two campaigns", "tag": "Outreach" },
+    { "date": "2026-11-02", "time": "14:59", "player": "tyberger", "text": "Salon wording for 8 Dubai salons sent, salon campaign live", "tag": "Outreach" },
+    { "date": "2026-11-02", "time": "09:50", "player": "tyberger", "text": "Gave the go on the Dubai clinic emails, 10 clinics loaded", "tag": "Outreach" }
   ],
 
   /* Social and content. Set "connected": true once the numbers come from a real source. */

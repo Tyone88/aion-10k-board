@@ -28,7 +28,7 @@ window.BOARD_DATA = {
     "timeZone": "Asia/Tbilisi",
     "endTimeISO": "2026-12-01T23:59:59+04:00",
     "launchTimeISO": "2026-11-02T00:00:00+04:00",
-    "lastUpdated": "2026-11-05",
+    "lastUpdated": "2026-11-06",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -49,9 +49,7 @@ window.BOARD_DATA = {
   /* Pipeline cards from the Notion plan. stage is one of: lead, call, proposal, invoiced.
      When the money clears, remove the card here and add a row to "payments". Payments show in the Paid and verified column automatically.
      { "id": "p1", "label": "Warm contact 1", "offer": "Starter", "value": 750, "stage": "lead", "owner": "tyrone", "next": "Personal ask", "due": "2026-10-21" } */
-  "pipeline": [
-    { "id": "p1", "label": "Dubai coworking space", "offer": "Front Desk Team, 899 AED a month (about $245)", "value": 245, "stage": "lead", "owner": "tyberger", "next": "Send the aiondevs.io/book link and ask for 10 minutes; one follow-up by Fri 6 Nov 12:00, then cold", "due": "2026-11-05" }
-  ],
+  "pipeline": [],
 
   /* Scoring events that are not payments or daily challenges. type is "call_booked" or "proposal_sent"
      { "date": "2026-10-22", "player": "tyrone", "type": "call_booked", "label": "Scope call, warm contact 2" } */
@@ -95,30 +93,30 @@ window.BOARD_DATA = {
   /* Top 3 moves this week. Step ticks are saved in this browser; set "done": true here to lock them in from Notion. */
   "moves": [
     {
-      "title": "Get the coworking lead on a call",
-      "summary": "Our only priced lead, Front Desk Team at 899 AED a month. The booking link and demo pack go today, one follow-up Friday, then cold.",
+      "title": "Price and book the two 511 leads",
+      "summary": "Two Dubai WhatsApp leads landed on 511 today and are still unpriced. First contact with Front Desk Team at 899 AED and the booking link is the fastest path to cash.",
       "steps": [
-        { "id": "m1s1", "who": "tyberger", "text": "Front Desk Team offer sent", "due": "2026-11-03", "done": true },
-        { "id": "m1s2", "who": "tyberger", "text": "Booking link and demo pack sent, with proof", "due": "2026-11-05", "done": false },
-        { "id": "m1s3", "who": "tyberger", "text": "One follow-up if no reply", "due": "2026-11-06", "done": false }
+        { "id": "m1s1", "who": "tyrone", "text": "First contact both 511 leads with Front Desk Team 899 AED and aiondevs.io/book", "due": "2026-11-07", "done": false },
+        { "id": "m1s2", "who": "tyrone", "text": "Log reply or book a 10-minute call", "due": "2026-11-08", "done": false },
+        { "id": "m1s3", "who": "both", "text": "Invoice on a yes at the USD that lands after fees", "due": "2026-11-10", "done": false }
+      ]
+    },
+    {
+      "title": "Gulf Phase 1 close on Monday",
+      "summary": "Phase 1 at $8,000 meets Mon 9 Nov 15:00. Counting as new business still needs Ty's ruling. Aim for signed scope and a deposit date in the room.",
+      "steps": [
+        { "id": "m2s1", "who": "both", "text": "Chief of Staff gets Ty's counting yes or no", "due": "2026-11-09", "done": false },
+        { "id": "m2s2", "who": "both", "text": "Close pack ready: Phase 1 $8,000 plus deposit ask", "due": "2026-11-08", "done": false },
+        { "id": "m2s3", "who": "tyrone", "text": "Ask for signed scope and a deposit date in the Mon 15:00 meeting", "due": "2026-11-09", "done": false }
       ]
     },
     {
       "title": "Turn cold email into replies",
-      "summary": "About 107 cold emails out since 2 Nov and no human replies yet. Load the new US and Dubai batches, then check delivery and write a new opening line before adding volume.",
+      "summary": "268 sent since 2 Nov, 0 human yes, bounces under 2%. New opening line and delivery check before any volume step to 30 a day on Mon 9 Nov.",
       "steps": [
-        { "id": "m2s1", "who": "both", "text": "Batch 05 and the new US leads loaded, with readback", "due": "2026-11-05", "done": false },
-        { "id": "m2s2", "who": "both", "text": "Delivery and placement check on all 4 inboxes plus a new opening line", "due": "2026-11-05", "done": false },
-        { "id": "m2s3", "who": "both", "text": "30 a day per inbox only if bounces stay under 2%", "due": "2026-11-09", "done": false }
-      ]
-    },
-    {
-      "title": "Dubai ad chats into booked calls",
-      "summary": "The Kai video ad runs on WhatsApp at $10 a day to 11 Nov. Every chat gets the booking link the same hour. The test is judged on calls booked, not cost per chat.",
-      "steps": [
-        { "id": "m3s1", "who": "tyrone", "text": "Kai video ad live, old carousel paused", "due": "2026-11-04", "done": true },
-        { "id": "m3s2", "who": "tyrone", "text": "Booking link live on aiondevs.io/book and sent by Kai", "due": "2026-11-03", "done": true },
-        { "id": "m3s3", "who": "both", "text": "First call booked from an ad chat", "due": "2026-11-11", "done": false }
+        { "id": "m3s1", "who": "both", "text": "Delivery check on all four inboxes plus a new opening line for Ty", "due": "2026-11-07", "done": false },
+        { "id": "m3s2", "who": "tyrone", "text": "Approve the new opening line", "due": "2026-11-08", "done": false },
+        { "id": "m3s3", "who": "both", "text": "30 a day per inbox only if bounces stay under 2%", "due": "2026-11-09", "done": false }
       ]
     }
   ],

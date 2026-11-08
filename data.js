@@ -28,7 +28,7 @@ window.BOARD_DATA = {
     "timeZone": "Asia/Tbilisi",
     "endTimeISO": "2026-12-01T23:59:59+04:00",
     "launchTimeISO": "2026-11-02T00:00:00+04:00",
-    "lastUpdated": "2026-11-06",
+    "lastUpdated": "2026-11-08",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -93,28 +93,28 @@ window.BOARD_DATA = {
   /* Top 3 moves this week. Step ticks are saved in this browser; set "done": true here to lock them in from Notion. */
   "moves": [
     {
-      "title": "Price and book the two 511 leads",
-      "summary": "Two Dubai WhatsApp leads landed on 511 today and are still unpriced. First contact with Front Desk Team at 899 AED and the booking link is the fastest path to cash.",
+      "title": "Price and book the three 511 leads",
+      "summary": "First contact went out on 8 Nov to all three Dubai WhatsApp leads from the ad. No priced offer or booked call is logged yet. Next is to confirm any buyer reply, send Front Desk Team at 899 AED and the booking link if they do not already have them, and book a 10-minute call.",
       "steps": [
-        { "id": "m1s1", "who": "tyrone", "text": "First contact both 511 leads with Front Desk Team 899 AED and aiondevs.io/book", "due": "2026-11-07", "done": false },
-        { "id": "m1s2", "who": "tyrone", "text": "Log reply or book a 10-minute call", "due": "2026-11-08", "done": false },
+        { "id": "m1s1", "who": "tyrone", "text": "First contact all three 511 leads", "due": "2026-11-08", "done": true },
+        { "id": "m1s2", "who": "tyrone", "text": "Confirm any buyer reply, send Front Desk Team 899 AED and aiondevs.io/book if not already priced, and book a 10-minute call", "due": "2026-11-08", "done": false },
         { "id": "m1s3", "who": "both", "text": "Invoice on a yes at the USD that lands after fees", "due": "2026-11-10", "done": false }
       ]
     },
     {
-      "title": "Gulf Phase 1 close on Monday",
-      "summary": "Phase 1 at $8,000 meets Mon 9 Nov 15:00. Counting as new business still needs Ty's ruling. Aim for signed scope and a deposit date in the room.",
+      "title": "Current client Phase 1 close on Monday",
+      "summary": "Phase 1 at $8,000 meets Mon 9 Nov 15:00. Counting as new business still needs a ruling. Aim for signed scope and a deposit date in the room.",
       "steps": [
-        { "id": "m2s1", "who": "both", "text": "Chief of Staff gets Ty's counting yes or no", "due": "2026-11-09", "done": false },
+        { "id": "m2s1", "who": "both", "text": "Chief of Staff gets the counting yes or no", "due": "2026-11-09", "done": false },
         { "id": "m2s2", "who": "both", "text": "Close pack ready: Phase 1 $8,000 plus deposit ask", "due": "2026-11-08", "done": false },
         { "id": "m2s3", "who": "tyrone", "text": "Ask for signed scope and a deposit date in the Mon 15:00 meeting", "due": "2026-11-09", "done": false }
       ]
     },
     {
       "title": "Turn cold email into replies",
-      "summary": "268 sent since 2 Nov, 0 human yes, bounces under 2%. New opening line and delivery check before any volume step to 30 a day on Mon 9 Nov.",
+      "summary": "294 sent since 2 Nov, 4 bounces (about 1.4%, under the 2% bar), 1 human reply (a stop) and 0 interested. No new sends on Sat or Sun. A new opening line is still needed before any volume step to 30 a day on Mon 9 Nov.",
       "steps": [
-        { "id": "m3s1", "who": "both", "text": "Delivery check on all four inboxes plus a new opening line for Ty", "due": "2026-11-07", "done": false },
+        { "id": "m3s1", "who": "both", "text": "Delivery check on all four inboxes plus a new opening line for Ty", "due": "2026-11-08", "done": false },
         { "id": "m3s2", "who": "tyrone", "text": "Approve the new opening line", "due": "2026-11-08", "done": false },
         { "id": "m3s3", "who": "both", "text": "30 a day per inbox only if bounces stay under 2%", "due": "2026-11-09", "done": false }
       ]
@@ -124,6 +124,9 @@ window.BOARD_DATA = {
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
   "completedTasks": [
+    { "date": "2026-11-08", "time": "09:20", "player": "tyrone", "text": "First contact sent to the three Dubai ad WhatsApp leads", "tag": "Pipeline" },
+    { "date": "2026-11-07", "time": "19:10", "player": "tyrone", "text": "Cold email at 294 sent since 2 Nov, 4 bounces (about 1.4%), still 0 interested replies", "tag": "Outreach" },
+    { "date": "2026-11-07", "time": "19:10", "player": "tyrone", "text": "Dubai WhatsApp video ad has brought in four chats (spend and chats as of 7 Nov)", "tag": "Ads" },
     { "date": "2026-11-04", "time": "16:47", "player": "tyrone", "text": "New Dubai Kai video ad live on WhatsApp, $10 a day to 11 Nov; old carousel paused", "tag": "Ads" },
     { "date": "2026-11-04", "time": "16:13", "player": "tyberger", "text": "11 new US leads loaded into the US cold campaign", "tag": "Outreach" },
     { "date": "2026-11-04", "time": "09:32", "player": "tyrone", "text": "Kai now offers to book the call, send reminders and manage it all", "tag": "Kai" },

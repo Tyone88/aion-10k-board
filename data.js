@@ -28,7 +28,7 @@ window.BOARD_DATA = {
     "timeZone": "Asia/Tbilisi",
     "endTimeISO": "2026-12-01T23:59:59+04:00",
     "launchTimeISO": "2026-11-02T00:00:00+04:00",
-    "lastUpdated": "2026-11-08",
+    "lastUpdated": "2026-11-11",
     "milestones": [
       { "amount": 750,   "label": "First sale" },
       { "amount": 2500,  "label": "$2.5K" },
@@ -53,12 +53,15 @@ window.BOARD_DATA = {
 
   /* Scoring events that are not payments or daily challenges. type is "call_booked" or "proposal_sent"
      { "date": "2026-10-22", "player": "tyrone", "type": "call_booked", "label": "Scope call, warm contact 2" } */
-  "scoreEvents": [],
+  "scoreEvents": [
+    { "date": "2026-11-10", "player": "tyberger", "type": "call_booked", "label": "Intro call, Dubai salon group" }
+  ],
 
   /* Daily challenges done, as recorded in Notion. Ticks on the board itself are also saved in this browser.
      { "date": "2026-10-19", "player": "tyrone" } */
   "challengeLog": [
-    { "date": "2026-11-02", "player": "tyberger" }
+    { "date": "2026-11-02", "player": "tyberger" },
+    { "date": "2026-11-10", "player": "tyberger" }
   ],
   /* 20 Oct tick by Ty Berger removed: 20 and 21 Oct are prep days and do not score. */
 
@@ -93,30 +96,30 @@ window.BOARD_DATA = {
   /* Top 3 moves this week. Step ticks are saved in this browser; set "done": true here to lock them in from Notion. */
   "moves": [
     {
-      "title": "Price and book the three 511 leads",
-      "summary": "First contact went out on 8 Nov to all three Dubai WhatsApp leads from the ad. No priced offer or booked call is logged yet. Next is to confirm any buyer reply, send Front Desk Team at 899 AED and the booking link if they do not already have them, and book a 10-minute call.",
+      "title": "Turn the Dubai WhatsApp leads into booked calls",
+      "summary": "Six Dubai ad leads, all replied to by Tyrone, no buyer yes or booked call yet. One asked if the agent can book without a link. Answer with the 7-day free trial and the booking link, and write each buyer answer on its card. The ad ends 11 Nov and renewal is judged on booked calls.",
       "steps": [
-        { "id": "m1s1", "who": "tyrone", "text": "First contact all three 511 leads", "due": "2026-11-08", "done": true },
-        { "id": "m1s2", "who": "tyrone", "text": "Confirm any buyer reply, send Front Desk Team 899 AED and aiondevs.io/book if not already priced, and book a 10-minute call", "due": "2026-11-08", "done": false },
-        { "id": "m1s3", "who": "both", "text": "Invoice on a yes at the USD that lands after fees", "due": "2026-11-10", "done": false }
+        { "id": "m1s1", "who": "tyrone", "text": "First reply to all Dubai WhatsApp leads", "due": "2026-11-10", "done": true },
+        { "id": "m1s2", "who": "tyrone", "text": "Answer the booking question with the free trial and the booking link", "due": "2026-11-11", "done": false },
+        { "id": "m1s3", "who": "both", "text": "Invoice on a yes at the USD that lands after fees", "due": "2026-11-14", "done": false }
       ]
     },
     {
-      "title": "Current client Phase 1 close on Monday",
-      "summary": "Phase 1 at $8,000 meets Mon 9 Nov 15:00. Counting as new business still needs a ruling. Aim for signed scope and a deposit date in the room.",
+      "title": "Dubai salon group and the AutoNoptic intro",
+      "summary": "Intro call held with a two-shop Dubai salon group. The questionnaire is approved and goes out next. AutoNoptic intro is Wed 11 Nov 19:00 with a $750 Starter ask. Nothing is priced or invoiced yet.",
       "steps": [
-        { "id": "m2s1", "who": "both", "text": "Chief of Staff gets the counting yes or no", "due": "2026-11-09", "done": false },
-        { "id": "m2s2", "who": "both", "text": "Close pack ready: Phase 1 $8,000 plus deposit ask", "due": "2026-11-08", "done": false },
-        { "id": "m2s3", "who": "tyrone", "text": "Ask for signed scope and a deposit date in the Mon 15:00 meeting", "due": "2026-11-09", "done": false }
+        { "id": "m2s1", "who": "tyberger", "text": "Send the 8-question questionnaire to the salon group", "due": "2026-11-11", "done": false },
+        { "id": "m2s2", "who": "tyrone", "text": "AutoNoptic intro with a $750 Starter ask", "due": "2026-11-11", "done": false },
+        { "id": "m2s3", "who": "both", "text": "Proposal from the questionnaire answers, Tyrone signs off", "due": "2026-11-14", "done": false }
       ]
     },
     {
       "title": "Turn cold email into replies",
-      "summary": "294 sent since 2 Nov, 4 bounces (about 1.4%, under the 2% bar), 1 human reply (a stop) and 0 interested. No new sends on Sat or Sun. A new opening line is still needed before any volume step to 30 a day on Mon 9 Nov.",
+      "summary": "385 sent since 2 Nov, 4 bounces (about 1%), 1 human reply (a stop) and 0 interested. A new opening line is needed before any volume step. Ty's own Founder Direct emails (34 delivered on 9 and 10 Nov) have 0 human replies so far.",
       "steps": [
-        { "id": "m3s1", "who": "both", "text": "Delivery check on all four inboxes plus a new opening line for Ty", "due": "2026-11-08", "done": false },
-        { "id": "m3s2", "who": "tyrone", "text": "Approve the new opening line", "due": "2026-11-08", "done": false },
-        { "id": "m3s3", "who": "both", "text": "30 a day per inbox only if bounces stay under 2%", "due": "2026-11-09", "done": false }
+        { "id": "m3s1", "who": "tyrone", "text": "New opening line from the outreach team to Tyrone", "due": "2026-11-12", "done": false },
+        { "id": "m3s2", "who": "tyrone", "text": "Approve the new opening line", "due": "2026-11-12", "done": false },
+        { "id": "m3s3", "who": "both", "text": "Raise volume only if bounces stay under 2%", "due": "2026-11-13", "done": false }
       ]
     }
   ],
@@ -124,6 +127,11 @@ window.BOARD_DATA = {
   /* Completed tasks feed. Newest first is handled for you.
      { "date": "2026-10-20", "time": "10:30", "player": "tyrone", "text": "Approved v4 UAE launch copy", "tag": "Launch" } */
   "completedTasks": [
+    { "date": "2026-11-10", "time": "21:30", "player": "tyrone", "text": "Approved the 8-question questionnaire for the Dubai salon group lead", "tag": "Pipeline" },
+    { "date": "2026-11-10", "time": "13:10", "player": "tyrone", "text": "Replied to all Dubai WhatsApp leads", "tag": "Pipeline" },
+    { "date": "2026-11-10", "time": "15:00", "player": "tyrone", "text": "Current client Phase 1 meeting held. Still not counted toward the $10K", "tag": "Client" },
+    { "date": "2026-11-10", "time": "10:26", "player": "tyberger", "text": "20 Founder Direct emails sent (salon, real estate, automotive), 0 bounces", "tag": "Outreach" },
+    { "date": "2026-11-10", "time": "10:00", "player": "tyberger", "text": "Intro call held with a Dubai salon group (two shops, ad push coming)", "tag": "Pipeline" },
     { "date": "2026-11-08", "time": "09:20", "player": "tyrone", "text": "First contact sent to the three Dubai ad WhatsApp leads", "tag": "Pipeline" },
     { "date": "2026-11-07", "time": "19:10", "player": "tyrone", "text": "Cold email at 294 sent since 2 Nov, 4 bounces (about 1.4%), still 0 interested replies", "tag": "Outreach" },
     { "date": "2026-11-07", "time": "19:10", "player": "tyrone", "text": "Dubai WhatsApp video ad has brought in four chats (spend and chats as of 7 Nov)", "tag": "Ads" },
